@@ -54,14 +54,14 @@ const ViewFlashCard = ({ setView, id }) => {
         </AccordionDetails>
         </Accordion>
         </Grid>
-            <Grid  item  xs={0.5} sm={0.5} md={0.5} lg={0.5} xl={0.5}>
-                <Box><IconButton><ChevronLeftIcon/></IconButton></Box>
+            <Grid item  xs={0.5} sm={0.5} md={0.5} lg={0.5} xl={0.5}>
+                <Box><IconButton disabled={index == 0} onClick={() => setIndex(index - 1)}><ChevronLeftIcon/></IconButton></Box>
             </Grid>
             <Grid  item  xs={11} sm={11} md={11} lg={11} xl={11}>
           <FlashCard flashCard={flashCards[index]}></FlashCard>
             </Grid>
             <Grid  item  xs={0.5} sm={0.5} md={0.5} lg={0.5} xl={0.5} sx={{display:"flex",flexDirection:"column",alignContent:"center"}}>
-                <IconButton><ChevronRightIcon/></IconButton>
+        <IconButton disabled={index == flashCards.length - 1} onClick={() => setIndex(index + 1)}><ChevronRightIcon/></IconButton>
             </Grid>
         </Grid>
     </Box> );
