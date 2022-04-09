@@ -1,0 +1,20 @@
+{
+  "flashCards": [
+    {
+      "title": "Flash Card Title",
+      "description": "This is the title",
+      "flashCards": [
+        {
+          "question": "This is the question",
+          "answer": "This is the answer"
+        },
+        {
+          "question": "This is the question",
+          "answer": "This is the answer"
+        }
+      ],
+      "mode": "public",
+      "id": 1
+    }
+  ]
+}
